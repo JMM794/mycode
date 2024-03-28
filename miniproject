@@ -1,0 +1,34 @@
+#create dictionary for different houses
+
+house = {
+    "Griffindor": "I value bravery and courage above all else.",
+    "Slytherin": "I prefer ambition and cunning to achieve my goals.",
+    "Ravenclaw": "I prioritize intelligence and wit in my decisions.",
+    "Hufflepuff": "I value loyalty and dedication to my friends and family.",
+        }
+
+#Create options
+print("Please select one of the following statements you feel most connected to! Or you can always ask for help.")
+print()
+print("A: " + house["Griffindor"])
+print("B: " + house["Hufflepuff"])
+print("C: " + house["Ravenclaw"])
+print("D: " + house["Slytherin"])
+print()
+
+#Create output
+answer=input("Answer:")
+if answer.upper() == ("A"):
+    print(" Your house is: Griffindor")
+elif answer.upper() == ("B"):
+    print(" Your house is: Hufflepuff")
+elif answer.upper() == ("C"):
+    print(" Your house is: Ravenclaw")
+elif answer.upper() == ("D"):
+    print(" Your house is: Slytherin")
+
+elif answer.title() == ("Help"):
+    print("There is no short bus for wizards, Harry.")
+else:
+    print("You are NOT a wizard, Harry!")
+    
